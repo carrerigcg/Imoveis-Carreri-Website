@@ -44,7 +44,7 @@ const Hero = () => {
             <Button 
               size="lg"
               variant="secondary"
-              onClick={() => window.open("https://wa.me/5511999999999?text=Olá, gostaria de agendar uma visita!", "_blank")}
+              onClick={() => window.open("https://wa.me/5511999999999?text=" + encodeURIComponent("Olá, gostaria de agendar uma visita para conhecer um imóvel da Imóveis Carreri."), "_blank")}
               className="gap-2 text-base font-semibold"
             >
               <Phone className="w-5 h-5" />
