@@ -37,14 +37,14 @@ const Hero = () => {
           
           <p className="font-sans text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl">
             Encontre apartamentos, casas e imóveis comerciais com atendimento personalizado 
-            e expertise de quem conhece a região há mais de 20 anos.
+            e expertise de quem conhece a região há mais de 56 anos.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Button 
               size="lg"
               variant="secondary"
-              onClick={() => window.open("https://wa.me/5511999999999?text=" + encodeURIComponent("Olá, gostaria de agendar uma visita para conhecer um imóvel da Imóveis Carreri."), "_blank")}
+              onClick={() => window.open("https://wa.me/5511931474718?text=" + encodeURIComponent("Olá, gostaria de agendar uma visita para conhecer um imóvel da Imóveis Carreri."), "_blank")}
               className="gap-2 text-base font-semibold"
             >
               <Phone className="w-5 h-5" />

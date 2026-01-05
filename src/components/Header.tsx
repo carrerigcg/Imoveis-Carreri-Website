@@ -56,7 +56,7 @@ const Header = () => {
             <Button 
               variant="default"
               size="default"
-              onClick={() => window.open("https://wa.me/5511999999999?text=" + encodeURIComponent("Olá, gostaria de agendar uma visita para conhecer um imóvel da Imóveis Carreri."), "_blank")}
+              onClick={() => window.open("https://wa.me/5511931474718?text=" + encodeURIComponent("Olá, gostaria de agendar uma visita para conhecer um imóvel da Imóveis Carreri."), "_blank")}
               className="gap-2"
             >
               <Phone className="w-4 h-4" />

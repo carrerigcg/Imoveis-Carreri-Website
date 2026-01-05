@@ -1,5 +1,5 @@
 import { CheckCircle } from "lucide-react";
-const highlights = ["Mais de 20 anos de experiência no mercado imobiliário", "Mais de 1.000 famílias realizaram o sonho do imóvel próprio", "Equipe de corretores especializados e certificados", "Parceria com os principais bancos para financiamento"];
+const highlights = ["Mais de 56 anos de experiência no mercado imobiliário", "Mais de 1.000 famílias realizaram o sonho do imóvel próprio", "Equipe de corretores especializados e certificados", "Parceria com os principais bancos para financiamento"];
 const About = () => {
   return <section id="sobre" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4">
