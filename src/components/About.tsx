@@ -1,15 +1,7 @@
 import { CheckCircle } from "lucide-react";
-
-const highlights = [
-  "Mais de 20 anos de experiência no mercado imobiliário",
-  "Mais de 1.000 famílias realizaram o sonho do imóvel próprio",
-  "Equipe de corretores especializados e certificados",
-  "Parceria com os principais bancos para financiamento",
-];
-
+const highlights = ["Mais de 20 anos de experiência no mercado imobiliário", "Mais de 1.000 famílias realizaram o sonho do imóvel próprio", "Equipe de corretores especializados e certificados", "Parceria com os principais bancos para financiamento"];
 const About = () => {
-  return (
-    <section id="sobre" className="py-16 md:py-24 bg-card">
+  return <section id="sobre" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
@@ -21,11 +13,7 @@ const About = () => {
               A Imóveis Carreri
             </h2>
             
-            <p className="font-sans text-muted-foreground leading-relaxed mb-6">
-              Desde 2003, a Imóveis Carreri atua exclusivamente na Zona Norte de São Paulo, 
-              construindo uma reputação sólida baseada em transparência, ética e resultados. 
-              Nossa missão é transformar a busca pelo imóvel ideal em uma experiência tranquila e segura.
-            </p>
+            <p className="font-sans text-muted-foreground leading-relaxed mb-6">Desde 1969, a Imóveis Carreri atua exclusivamente na Zona Norte de São Paulo, construindo uma reputação sólida baseada em transparência, ética e resultados. Nossa missão é transformar a busca pelo imóvel ideal em uma experiência tranquila e segura.</p>
             
             <p className="font-sans text-muted-foreground leading-relaxed mb-8">
               Conhecemos cada bairro, cada rua e cada oportunidade da região. Essa expertise 
@@ -34,19 +22,17 @@ const About = () => {
             </p>
 
             <ul className="space-y-4">
-              {highlights.map((item, index) => (
-                <li key={index} className="flex items-start gap-3">
+              {highlights.map((item, index) => <li key={index} className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
                   <span className="font-sans text-foreground">{item}</span>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-2 gap-6">
             <div className="bg-background p-6 md:p-8 rounded-lg border border-border text-center">
-              <span className="font-serif text-4xl md:text-5xl font-bold text-primary">20+</span>
+              <span className="font-serif text-4xl md:text-5xl font-bold text-primary">56+</span>
               <p className="font-sans text-muted-foreground mt-2">Anos de Experiência</p>
             </div>
             <div className="bg-background p-6 md:p-8 rounded-lg border border-border text-center">
@@ -64,8 +50,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;

@@ -9,10 +9,7 @@ const Location = () => {
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4">
             Nossa Localização
           </h2>
-          <p className="font-sans text-muted-foreground max-w-2xl mx-auto">
-            Visite nosso escritório no coração de Santana ou entre em contato 
-            para agendar uma visita aos imóveis de seu interesse.
-          </p>
+          <p className="font-sans text-muted-foreground max-w-2xl mx-auto">Visite nosso escritório no coração do Jardim Brasil ou entre em contato para agendar uma visita aos imóveis de seu interesse.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
@@ -23,9 +20,7 @@ const Location = () => {
               <p className="font-sans text-muted-foreground">
                 Mapa interativo será carregado aqui.
               </p>
-              <p className="font-sans text-sm text-muted-foreground mt-2">
-                Av. Voluntários da Pátria, 1234 - Santana, São Paulo - SP
-              </p>
+              <p className="font-sans text-sm text-muted-foreground mt-2">AV. Jd, Japão, 501 - Jardim Brasil, São Paulo SP - 02221-000</p>
             </div>
           </div>
 
@@ -43,8 +38,9 @@ const Location = () => {
                 <div>
                   <h4 className="font-sans font-semibold text-foreground mb-1">Endereço</h4>
                   <p className="font-sans text-muted-foreground">Av. Jd. Japão, 501 
-Jardim Brasil, São Paulo
-SP, 02221-000<br />
+Jardim Brasil, São Paulo SP 
+02221-000
+                  <br />
                     Santana, São Paulo - SP<br />
                     CEP: 02011-000
                   </p>
@@ -57,9 +53,7 @@ SP, 02221-000<br />
                 </div>
                 <div>
                   <h4 className="font-sans font-semibold text-foreground mb-1">Telefone / WhatsApp</h4>
-                  <p className="font-sans text-muted-foreground">
-                    (11) 99999-9999
-                  </p>
+                  <p className="font-sans text-muted-foreground"> (11) 2201-6171</p>
                 </div>
               </div>
 
@@ -81,8 +75,8 @@ SP, 02221-000<br />
                 </div>
                 <div>
                   <h4 className="font-sans font-semibold text-foreground mb-1">Horário de Funcionamento</h4>
-                  <p className="font-sans text-muted-foreground">
-                    Segunda a Sexta: 9h às 18h<br />
+                  <p className="font-sans text-muted-foreground">Segunda a Sexta: 8:30h às 17h
+                  <br />
                     Sábado: 9h às 14h
                   </p>
                 </div>

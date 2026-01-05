@@ -1,27 +1,35 @@
 import { Phone, Mail, MapPin, Instagram, Facebook, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  const quickLinks = [
-    { label: "Home", href: "#home" },
-    { label: "Sobre", href: "#sobre" },
-    { label: "Imóveis", href: "#imoveis" },
-    { label: "Vantagens", href: "#vantagens" },
-    { label: "Localização", href: "#localizacao" },
-    { label: "Contato", href: "#contato" },
-  ];
-
+  const quickLinks = [{
+    label: "Home",
+    href: "#home"
+  }, {
+    label: "Sobre",
+    href: "#sobre"
+  }, {
+    label: "Imóveis",
+    href: "#imoveis"
+  }, {
+    label: "Vantagens",
+    href: "#vantagens"
+  }, {
+    label: "Localização",
+    href: "#localizacao"
+  }, {
+    label: "Contato",
+    href: "#contato"
+  }];
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({
+        behavior: "smooth"
+      });
     }
   };
-
-  return (
-    <footer id="contato" className="bg-primary text-primary-foreground">
+  return <footer id="contato" className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
@@ -35,31 +43,13 @@ const Footer = () => {
             
             {/* Social Links */}
             <div className="flex gap-3 mt-6">
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-colors"
-                aria-label="Instagram"
-              >
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-colors" aria-label="Instagram">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-colors"
-                aria-label="Facebook"
-              >
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-colors" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-colors"
-                aria-label="LinkedIn"
-              >
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-colors" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
@@ -69,17 +59,14 @@ const Footer = () => {
           <div>
             <h4 className="font-serif text-lg font-semibold mb-4">Links Rápidos</h4>
             <ul className="space-y-3">
-              {quickLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    onClick={(e) => { e.preventDefault(); scrollToSection(link.href); }}
-                    className="font-sans text-primary-foreground/80 hover:text-secondary transition-colors"
-                  >
+              {quickLinks.map(link => <li key={link.href}>
+                  <a href={link.href} onClick={e => {
+                e.preventDefault();
+                scrollToSection(link.href);
+              }} className="font-sans text-primary-foreground/80 hover:text-secondary transition-colors">
                     {link.label}
                   </a>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -89,16 +76,15 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5 text-secondary" />
-                <span className="font-sans text-primary-foreground/80">
-                  Av. Voluntários da Pátria, 1234<br />
+                <span className="font-sans text-primary-foreground/80">Av. Jd. Japão, 501 
+Jardim Brasil, São Paulo SP 
+02221-000<br />
                   Santana, São Paulo - SP
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 flex-shrink-0 text-secondary" />
-                <span className="font-sans text-primary-foreground/80">
-                  (11) 99999-9999
-                </span>
+                <span className="font-sans text-primary-foreground/80"> (11) 2201-6171</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 flex-shrink-0 text-secondary" />
@@ -115,12 +101,7 @@ const Footer = () => {
             <p className="font-sans text-primary-foreground/80 mb-4">
               Entre em contato pelo WhatsApp e agende uma visita ao imóvel de seu interesse.
             </p>
-            <Button
-              variant="secondary"
-              size="lg"
-              onClick={() => window.open("https://wa.me/5511999999999?text=Olá, gostaria de agendar uma visita!", "_blank")}
-              className="w-full gap-2"
-            >
+            <Button variant="secondary" size="lg" onClick={() => window.open("https://wa.me/5511999999999?text=Olá, gostaria de agendar uma visita!", "_blank")} className="w-full gap-2">
               <Phone className="w-5 h-5" />
               Fale Conosco
             </Button>
@@ -139,8 +120,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
