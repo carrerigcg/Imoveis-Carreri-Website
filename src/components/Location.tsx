@@ -1,8 +1,6 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-
 const Location = () => {
-  return (
-    <section id="localizacao" className="py-16 md:py-24 bg-card">
+  return <section id="localizacao" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 md:mb-16">
           <span className="font-sans text-sm font-medium text-secondary uppercase tracking-wide">
@@ -44,8 +42,9 @@ const Location = () => {
                 </div>
                 <div>
                   <h4 className="font-sans font-semibold text-foreground mb-1">Endereço</h4>
-                  <p className="font-sans text-muted-foreground">
-                    Av. Voluntários da Pátria, 1234<br />
+                  <p className="font-sans text-muted-foreground">Av. Jd. Japão, 501 
+Jardim Brasil, São Paulo
+SP, 02221-000<br />
                     Santana, São Paulo - SP<br />
                     CEP: 02011-000
                   </p>
@@ -59,8 +58,7 @@ const Location = () => {
                 <div>
                   <h4 className="font-sans font-semibold text-foreground mb-1">Telefone / WhatsApp</h4>
                   <p className="font-sans text-muted-foreground">
-                    (11) 99999-9999
-                  </p>
+                </p>
                 </div>
               </div>
 
@@ -92,8 +90,6 @@ const Location = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Location;
