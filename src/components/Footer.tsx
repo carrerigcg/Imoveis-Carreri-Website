@@ -101,7 +101,7 @@ Jardim Brasil, São Paulo SP 
             <p className="font-sans text-primary-foreground/80 mb-4">
               Entre em contato pelo WhatsApp e agende uma visita ao imóvel de seu interesse.
             </p>
-            <Button variant="secondary" size="lg" onClick={() => window.open("https://wa.me/5511999999999?text=Olá, gostaria de agendar uma visita!", "_blank")} className="w-full gap-2">
+            <Button variant="secondary" size="lg" onClick={() => window.open("https://wa.me/5511999999999?text=" + encodeURIComponent("Olá, gostaria de agendar uma visita para conhecer um imóvel da Imóveis Carreri."), "_blank")} className="w-full gap-2">
               <Phone className="w-5 h-5" />
               Fale Conosco
             </Button>

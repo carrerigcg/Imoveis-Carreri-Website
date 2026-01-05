@@ -23,7 +23,7 @@ const PropertyCard = ({
   bathrooms,
 }: PropertyCardProps) => {
   const whatsappMessage = encodeURIComponent(
-    `Olá, sou interessado no imóvel "${title}" em ${neighborhood} — gostaria de agendar uma visita.`
+    `Olá, tenho interesse no imóvel "${title}" e gostaria de mais informações.`
   );
 
   return (
@@ -81,11 +81,12 @@ const PropertyCard = ({
           </Button>
           <Button
             variant="default"
-            size="icon"
+            className="flex-1 gap-2"
             onClick={() => window.open(`https://wa.me/5511999999999?text=${whatsappMessage}`, "_blank")}
             aria-label="Contato via WhatsApp"
           >
-            <MessageCircle className="w-5 h-5" />
+            <MessageCircle className="w-4 h-4" />
+            WhatsApp
           </Button>
         </div>
       </div>
