@@ -1,18 +1,23 @@
-```markdown
-# 🏡 Carreri Imóveis - Website
+<h1 align="center">🏡 Carreri Imóveis</h1>
 
-<div align="center">
+<p align="center">
+  Website moderno e responsivo para a Carreri Imóveis
+</p>
 
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+<p align="center">
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+</p>
 
-**Website moderno e responsivo para a Carreri Imóveis**
+<p align="center">
+  <a href="#">Ver Demo</a> •
+  <a href="https://github.com/carrerigcg/Imoveis-Carreri-Website/issues">Reportar Bug</a> •
+  <a href="https://github.com/carrerigcg/Imoveis-Carreri-Website/issues">Solicitar Feature</a>
+</p>
 
-[Ver Demo](#) · [Reportar Bug](https://github.com/carrerigcg/Imoveis-Carreri-Website/issues) · [Solicitar Feature](https://github.com/carrerigcg/Imoveis-Carreri-Website/issues)
-
-</div>
+<hr />
 
 ---
 
@@ -40,7 +45,6 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - **[Vite](https://vitejs.dev/)** - Build tool moderna e extremamente rápida
 - **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS utility-first
 - **[shadcn/ui](https://ui.shadcn.com/)** - Componentes UI reutilizáveis e acessíveis
-- **[Lovable](https://lovable.dev/)** - Plataforma de desenvolvimento low-code
 
 ---
 
@@ -146,14 +150,6 @@ npx shadcn-ui@latest add dialog
 
 ## 🚀 Deploy
 
-### Deploy via Lovable
-
-A forma mais simples de fazer deploy:
-
-1. Acesse o [projeto no Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID)
-2. Clique em **Share → Publish**
-3. Seu site será publicado instantaneamente
-
 ### Deploy Manual
 
 #### Vercel
@@ -236,7 +232,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 **Carreri Imóveis**
 - 🌐 Website: [Em breve]
 - 📧 Email: contato@carreriimoveis.com.br
-- 📱 Instagram: [@carreriimoveis](https://www.instagram.com/carreriimoveis/)
+- 📱 Instagram: [@carreri_corretor_de_imoveis]
 
 ---
 
