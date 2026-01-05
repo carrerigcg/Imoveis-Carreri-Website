@@ -58,7 +58,8 @@ SP, 02221-000<br />
                 <div>
                   <h4 className="font-sans font-semibold text-foreground mb-1">Telefone / WhatsApp</h4>
                   <p className="font-sans text-muted-foreground">
-                </p>
+                    (11) 99999-9999
+                  </p>
                 </div>
               </div>
 
