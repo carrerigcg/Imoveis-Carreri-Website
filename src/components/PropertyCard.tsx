@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Bed, Bath, Square, MapPin, MessageCircle } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface PropertyCardProps {
   image: string;
@@ -22,6 +23,8 @@ const PropertyCard = ({
   bedrooms,
   bathrooms,
 }: PropertyCardProps) => {
+  const navigate = useNavigate();
+
   const whatsappMessage = encodeURIComponent(
     `Olá, tenho interesse no imóvel "${title}" e gostaria de mais informações.`
   );
@@ -71,18 +74,30 @@ const PropertyCard = ({
 
         {/* Price */}
         <div className="mb-4">
-          <span className="font-serif text-2xl font-bold text-primary">{price}</span>
+          <span className="font-serif text-2xl font-bold text-primary">
+            {price}
+          </span>
         </div>
 
         {/* Actions */}
         <div className="flex gap-3">
-          <Button variant="outline" className="flex-1">
+          <Button
+            variant="outline"
+            className="flex-1"
+            onClick={() => navigate("/imovel")}
+          >
             Ver Detalhes
           </Button>
+
           <Button
             variant="default"
             className="flex-1 gap-2"
-            onClick={() => window.open(`https://wa.me/5511999999999?text=${whatsappMessage}`, "_blank")}
+            onClick={() =>
+              window.open(
+                `https://wa.me/5511999999999?text=${whatsappMessage}`,
+                "_blank"
+              )
+            }
             aria-label="Contato via WhatsApp"
           >
             <MessageCircle className="w-4 h-4" />
